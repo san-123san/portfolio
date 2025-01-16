@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio Website">
+    <title>Sathyan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+
+	* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #1c1c1c;
+            color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #000000;
+            color: #f4f4f4;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #ffd700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #b3b3b3;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333333;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: #ffd700;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            color: #ffd700;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 4px;
+            background: #ffd700;
+            margin: 0.5rem auto;
+        }
+
+        .about-skills-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+
+        .about {
+            flex: 1;
+        }
+
+        .skills {
+            flex: 1;
+        }
+
+        .skills .skill {
+            margin-bottom: 1rem;
+        }
+
+        .skills .skill h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .skills .progress-bar {
+            background: #333333;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .skills .progress-bar span {
+            display: block;
+            height: 15px;
+            background: #ffd700;
+            text-align: right;
+            padding-right: 5px;
+            color: #000;
+            font-size: 0.9rem;
+            line-height: 15px;
+        }
+
+        .card {
+            background: #333333;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            color: #f4f4f4;
+            flex: 1;
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+            color: #ffd700;
+        }
+
+        .card a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #000000;
+            color: #f4f4f4;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="photo1.jpg" alt="Your Photo">
+            <div>
+                <h1>Sathyan</h1>
+                <p>Data Analyst | AI Enthusiast | Developer</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about-skills">About & Skills</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about-skills">
+        <h2 class="section-title">About Me & Skills</h2>
+        <div class="about-skills-container">
+            <div class="about">
+                <h3>About Me</h3>
+                <p>Hello! I'm a dedicated professional with expertise in data analysis, artificial intelligence, and related technologies. I strive to create impactful solutions and continuously grow in the fields of data-driven innovation and AI development.</p>
+            </div>
+            <div class="skills">
+                <div class="skill">
+                    <h4>Python</h4>
+                    <div class="progress-bar"><span style="width: 90%;">90%</span></div>
+                </div>
+                <div class="skill">
+                    <h4>R</h4>
+                    <div class="progress-bar"><span style="width: 80%;">80%</span></div>
+                </div>
+                <div class="skill">
+                    <h4>SQL</h4>
+                    <div class="progress-bar"><span style="width: 85%;">85%</span></div>
+                </div>
+                <div class="skill">
+                    <h4>Java</h4>
+                    <div class="progress-bar"><span style="width: 70%;">70%</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        
+		<div class="card">
+            	<h3>BSC in Science and Management(IS)</h3>
+            		<p>University of Colombo, 2022-2026</p>
+        	</div>
+		<div class="card">
+            		<h3>Secondary School</h3>
+            	<p>Jaffna Hindu College, 2012-2021</p>
+        	</div>
+	
+    </section>
+
+<section id="certifications">
+    <h2 class="section-title">Certifications</h2>
+    <div class="cards-container">
+        <div class="card" style="background-image: url('CERTIFICATE1.jpg');">
+            <h3><a href="https://www.coursera.org/account/accomplishments/verify/CLQDCXMDKG2H" target="_blank">
+                Python for Data Science, AI & Development</a></h3>
+        </div>
+        <div class="card" style="background-image: url('excel_background.jpg');">
+            <h3><a href="https://www.coursera.org/account/accomplishments/verify/CBTT84Y47852" target="_blank">
+                Excel Skills for Business</a></h3>
+        </div>
+        <div class="card" style="background-image: url('powerbi_background.jpg');">
+            <h3><a href="https://www.coursera.org/account/accomplishments/verify/UNEFIEGFFJBZ" target="_blank">
+                Data Analysis and Visualization with Power BI</a></h3>
+        </div>
+    </div>
+</section>
+
+
+     <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="cards-container">
+        <div class="card" style="background-image: url('Weather.jpg');">
+            <h3><a href="https://github.com/san-123san/Weather-Data-Analysis" target="_blank">Weather Analysis</a></h3>
+            <p>Developed a responsive analysis with the Weather.</p>
+        </div>
+        <div class="card" style="background-image: url('photo1.jpg');">
+            <h3><a href="project_link_2" target="_blank">Portfolio</a></h3>
+            <p>Developed a responsive website to showcase my projects and certifications.</p>
+        </div>
+    </div>
+</section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <p>Email: <a href="mailto:srisan23lp@gmail.com">srisan23lp@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sriramachandran-sathyan-s7/" target="_blank">linkedin.com/in/sriramachandran-sathyan-s7/</a></p>
+        <p>GitHub: <a href="https://github.com/san-123san" target="_blank">github.com/san-123san</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sathyan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
